@@ -1,0 +1,165 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: #1a9690;
+  color: white;
+  padding: 20px;
+  text-align: right;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: rgb(3, 3, 3);;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: right;
+}
+
+p {
+  text-align: right; /* Alinea los párrafos a la derecha */
+}
+
+.semanas-container {
+  display: flex;
+  flex-direction: column; /* Para que se alineen en columnas */
+  align-items: flex-start; /* Alinea todo a la izquierda */
+}
+
+.semana {
+  background-color:#1a9690; /* Color de fondo */
+  color: white;
+  padding: 20px;
+  margin: 10px 0; /* Espaciado vertical entre semanas */
+  border-radius: 8px; /* Bordes redondeados */
+  width: 100%; /* Para ocupar todo el ancho */
+  text-align: left; /* Texto alineado a la izquierda */
+  cursor: pointer; /* Cursor pointer para indicar que es clickable */
+  transition: transform 0.2s; /* Efecto de transición */
+}
+
+.semana:hover {
+  transform: scale(1.05); /* Efecto al pasar el mouse */
+}
+
+.submenu {
+  display: none;
+  background-color: white; /* Color de fondo del submenú */
+  color: black;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px; /* Bordes redondeados del submenú */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+footer {
+  text-align: right;
+  padding: 10px;
+  background: #333;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+#imagenInicio {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 600px;
+}
+/* estilos.css */
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color:  #57ffdb; 
+     color: rgb(17, 15, 15);
+    padding: 10px 20px;
+
+/* Navegación */
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #f0b6f8; /* Color al pasar el ratón */
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Títulos */
+h1, h2 {
+    color: #f16412;
+}
+
+/* Contenido de las semanas */
+.semanas-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.semanas-container li {
+    background-color: #e7f3fe; /* Azul claro */
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 5px solid #1a9690; /* Azul */
+}
+
+/* Imagen de bienvenida */
+#imagenInicio {
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+

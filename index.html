@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación Web y Móviles</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Programación Web y Móviles</h1>
+    <header>
+        <nav>
+            <a href="#" onclick="mostrarContenido('inicio')">Inicio</a>
+            <a href="#" onclick="mostrarContenido('semanas')">Semanas</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" style="display: none;">
+            <h2>Bienvenido a la Programación Web y Móviles</h2>
+            <p>Aquí encontrarás información sobre las clases y recursos para aprender a desarrollar aplicaciones web y móviles.</p>
+            <img id="imagenInicio" src="siti.jpg" alt="Imagen de bienvenida" style="display: none; width: 100%; max-width: 600px;"/>
+        </section>
+
+            <section id="semanas" style="display: none;">
+            <h2>Semanas de Curso</h2>
+            <p>Consulta el contenido de cada semana:</p>
+
+            <div class="semanas-container">
+
+             <div class="semanas-container">
+    <div class="semana" onclick="mostrarSubmenu('semana1')">
+        <h3>Semana 1</h3>
+        <div id="semana1" class="submenu" style="display: none;">
+            <p>Estimado Alumno:  
+                La tarea consiste en elaborar una infografía para el archivo “semana01”,
+                 empleando las diferentes aplicaciones online que permiten crear infografías. </p>
+            <a href="pdf/Infografia Informativa Bellas Artes Cuadros Simple Llamativa Azul.pdf">Ver Infografia</a>
+        </div>
+    </div>
+    
+    <div class="semana" onclick="mostrarSubmenu('semana2')">
+        <h3>Semana 2</h3>
+        <div id="semana2" class="submenu" style="display: none;">
+            <p>Estimado Alumno:  
+                La tarea consiste en elaborar la instalación del lenguaje Dart y 
+                el Framework Flutter  en el editor de código Visual Studio Code para la actividad 02. 
+                 </p>
+            <a href="pdf/manual.pdf">Ver Manual 2</a>
+        </div>
+    </div>
+    
+    <div class="semana" onclick="mostrarSubmenu('semana3')">
+        <h3>Semana 3</h3>
+        <div id="semana3" class="submenu" style="display: none;">
+            <h3>Fundamentos de Dart:</h3>
+             <ul>
+    <li>Cálculo de Área y Volumen de un Cilindro</li>
+    <li>Reparto de Dinero entre Hijos</li>
+    <li>Distribución de Inversión en Feria</li>
+</ul>
+                                 <h3>Requerimientos Funcionales:</h3>
+        <ul>
+            <li> Cálculo del Área Total-Cálculo del Volumen</li>
+            <li>Cálculo de Monto Recibido por Cada Hijo</li>
+            <li>Cálculo del Gasto por Rubro</li>
+        </ul>
+
+                <a href="https://github.com/Madeleyleiva/DPW/blob/a3d799df57e7a8582797dcec62d9c9a43d1c1ee7/dart/ejercicio01.dart">Ver ejercicio01</a><br>
+                 <a href="https://github.com/Madeleyleiva/DPW/blob/a3d799df57e7a8582797dcec62d9c9a43d1c1ee7/dart/ejercicio02.dart">Ver ejercicio02</a><br>
+                 <a href="https://github.com/Madeleyleiva/DPW/blob/a3d799df57e7a8582797dcec62d9c9a43d1c1ee7/dart/ejercicio03.dart">Ver ejercicio03</a>
+                 
+                 
+        </div>
+    </div>
+    
+    <div class="semana" onclick="mostrarSubmenu('semana4')">
+        <h3>Semana 4</h3>
+        <div id="semana4" class="submenu" style="display: none;">
+            <h3>Estructuras Selectivas:</h3>
+                    
+            <ul>
+                <li>Determinar la Rebaja de la Pensión Universitaria</li>
+                <li>Costo de la Libreta Militar</li>
+                <li>Cálculo Salarial de Vendedores</li>
+            </ul>
+                                             <h3>Requerimientos Funcionales:</h3>
+                    <ul>
+                        <li> Cálculo del Descuento-Cálculo de la Nueva Pensión</li>
+                        <li>Cálculo del Costo</li>
+                        <li>Cálculo del Sueldo Bruto,Cálculo de la comisión,Cálculo de la bonificación
+                            Cálculo del Descuento,Cálculo del Sueldo Neto.
+                        </li>
+                    </ul>
+                    <a href="https://github.com/Madeleyleiva/DPW/blob/41d0e7e8faffdfa238e874c82d02d1a4650f4d35/dart/actividad01.dart">Ver actividad01</a><br>
+                    <a href="https://github.com/Madeleyleiva/DPW/blob/41d0e7e8faffdfa238e874c82d02d1a4650f4d35/dart/actividad02.dart">Ver actividad02</a><br>
+                    <a href="https://github.com/Madeleyleiva/DPW/blob/41d0e7e8faffdfa238e874c82d02d1a4650f4d35/dart/actividad03.dart">Ver actividad03</a>
+                    
+        </div>
+    </div>
+    
+    <div class="semana" onclick="mostrarSubmenu('semana5')">
+        <h3>Semana 5</h3>
+        <div id="semana5" class="submenu" style="display: none;">
+            <h3>Estructuras Repetitivas y Sus Requerimientos Funcionales:</h3>
+                    
+            <ul>
+                <li>Sumatoria de Números Primos: Calcula la suma de números primos en un rango dado</li>
+                <li> Secuencia de Fibonacci: Genera la secuencia de Fibonacci hasta n términos.</li>
+                <li> Factorial de Números Grandes: Calcula el factorial de un número grande usando bucles</li>
+                <li>Inversión de un Número: Invierte los dígitos de un número entero</li>
+                <li>Suma de Matrices NxN: Suma dos matrices de tamaño NxN</li>
+                <li>Números Perfectos: Encuentra números perfectos entre 1 y 10,000.</li>
+                <li>Matriz en Espiral: Llena una matriz cuadrada en forma de espiral.</li>
+                <li>Número Armstrong: Verifica si un número es un número de Armstrong.</li>
+                <li>Cálculo de Potencias: Calcula potencias usando multiplicación repetida</li>
+            </ul>
+                                             
+                    <a href="https://github.com/Madeleyleiva/DPW/blob/ffc63d45ad87f233da42aafd53ef8c5db476ec40/dart/EJEMPLO01.dart">Ver EJEMPLO01</a><br>
+                   <a href="https://github.com/Madeleyleiva/DPW/blob/ffc63d45ad87f233da42aafd53ef8c5db476ec40/dart/EJEMPLO02.dart">Ver EJEMPLO02</a><br>
+                   <a href="https://github.com/Madeleyleiva/DPW/blob/ffc63d45ad87f233da42aafd53ef8c5db476ec40/dart/EJEMPLO03.dart">Ver EJEMPLO03</a><br>
+                   <a href="https://github.com/Madeleyleiva/DPW/blob/ffc63d45ad87f233da42aafd53ef8c5db476ec40/dart/EJEMPLO04.dart">Ver EJEMPLO04</a><br>
+                   <a href="https://github.com/Madeleyleiva/DPW/blob/ffc63d45ad87f233da42aafd53ef8c5db476ec40/dart/EJEMPLO05.dart">Ver EJEMPLO05</a><br>
+                   <a href="https://github.com/Madeleyleiva/DPW/blob/ffc63d45ad87f233da42aafd53ef8c5db476ec40/dart/EJEMPLO06.dart">Ver EJEMPLO06</a><br>
+                   <a href="https://github.com/Madeleyleiva/DPW/blob/ffc63d45ad87f233da42aafd53ef8c5db476ec40/dart/EJEMPLO07.dart">Ver EJEMPLO07</a><br>
+                   <a href="https://github.com/Madeleyleiva/DPW/blob/ffc63d45ad87f233da42aafd53ef8c5db476ec40/dart/EJEMPLO08.dart">Ver EJEMPLO08</a><br>
+                   <a href="https://github.com/Madeleyleiva/DPW/blob/ffc63d45ad87f233da42aafd53ef8c5db476ec40/dart/EJEMPLO09.dart">Ver EJEMPLO09</a>
+        </div>
+    </div>
+    
+  <div class="semana" onclick="mostrarSubmenu('semana6')">
+        <h3>Semana 6</h3>
+        <div id="semana6" class="submenu" style="display: none;">
+            <h3>Enunciado:</h3>
+                    <p>Una empresa paga a sus vendedores un sueldo bruto que se calcula sumando un sueldo básico más una comisión.
+                         El sueldo básico es S/. 350.75. La comisión es igual al 5% del importe total vendido en el mes. 
+                         Por ley, todo empleado está sujeto a un descuento igual al 15% del sueldo bruto. Diseñe un algoritmo que imprima la boleta de un vendedor indicando el sueldo básico, 
+                         la comisión, el sueldo bruto, el descuento y el sueldo neto.</p>
+                                 <h3>Requerimientos Funcionales:</h3>
+        <ul>
+            <li>Calcular la comisión (5% de las ventas).</li>
+            <li>Calcular el sueldo bruto sumando el sueldo básico y la comisión.</li>
+            <li>Aplicar un descuento del 15% sobre el sueldo bruto.</li>
+            <li>Calcular el sueldo neto restando el descuento al sueldo bruto.</li>
+        </ul>
+                    <a href="https://github.com/Madeleyleiva/DPW/blob/970a3fd33af740e630162b41eb88b4841589e73e/dart/ejercicio06.dart">Ver ejercicio06</a><br>
+                    <a href="https://github.com/Madeleyleiva/DPW/blob/970a3fd33af740e630162b41eb88b4841589e73e/dart/ejercicio07.dart">Ver ejercicio07</a><br>
+                    <a href="https://github.com/Madeleyleiva/DPW/blob/970a3fd33af740e630162b41eb88b4841589e73e/dart/ejercicio08.dart">Ver ejercicio08</a><br>
+                    <a href="https://github.com/Madeleyleiva/DPW/blob/970a3fd33af740e630162b41eb88b4841589e73e/dart/ejercicio09.dart">Ver ejercicio09</a>
+        </div>
+    </div>
+
+  <div class="semana" onclick="mostrarSubmenu('semana6_2')">
+        <h3>Semana 6_2</h3>
+        <div id="semana6_2" class="submenu" style="display: none;">
+            <h3>tarea:</h3>
+            
+                  <a href="https://github.com/Madeleyleiva/DPW/blob/6041fac3bd05109654ed2a9094fb135097e2eb60/dart/trabajo1.dart">Ver trabajo1</a><br>
+                    <a href="https://github.com/Madeleyleiva/DPW/blob/6041fac3bd05109654ed2a9094fb135097e2eb60/dart/trabajo2.dart">Ver trabajo2</a><br>
+                    <a href="https://github.com/Madeleyleiva/DPW/blob/6041fac3bd05109654ed2a9094fb135097e2eb60/dart/trabajo3.dart">Ver trabajo3</a><br>
+                    <a href="https://github.com/Madeleyleiva/DPW/blob/6041fac3bd05109654ed2a9094fb135097e2eb60/dart/trabajo4.dart">Ver trabajo4</a>
+        </div>
+    </div>
+
+  <div class="semana" onclick="mostrarSubmenu('semana7')">
+        <h3>Semana 7</h3>
+        <div id="semana7" class="submenu" style="display: none;">
+           <h3>Colecciones en Dart:</h3>
+           <p>La actividad consiste en crear programas utilizando funciones en lenguaje Dart y Visual.</p>
+                    <h3>Requerimientos Funcionales:</h3>
+       <ul>
+       <li>Calcule la nueva pensión:Utilizando la Colección - List</li>
+       <li>Calcular la bonificación basada en el puntaje total del empleado:
+        Utilizando la Colección - List</li>
+       <li>Determinar el importe final a pagar aplicando el 
+        descuento según la cantidad de chocolates comprados:
+        Utilizando la Colección - Set
+       </li>
+       <li>Determinar el importe a pagar según el tipo de producto y la cantidad de unidades adquiridas:
+        Utilizando la Colección - Map
+       </li>
+       </ul>
+                    <a href="https://github.com/Madeleyleiva/DPW/blob/9c51202323c81a34061028ebba85b0d51b8b53ae/dart/desarrollo01.dart">Ver desarrollo01</a><br>
+                    <a href="https://github.com/Madeleyleiva/DPW/blob/9c51202323c81a34061028ebba85b0d51b8b53ae/dart/desarrollo02.dart">Ver desarrollo02</a><br>
+                    <a href="https://github.com/Madeleyleiva/DPW/blob/9c51202323c81a34061028ebba85b0d51b8b53ae/dart/desarrollo03.dart">Ver desarrollo03</a><br>
+                    <a href="https://github.com/Madeleyleiva/DPW/blob/9c51202323c81a34061028ebba85b0d51b8b53ae/dart/desarrollo04.dart">Ver desarrollo04</a>
+        </div>
+    </div>
+                 
+    <div class="semana" onclick="mostrarSubmenu('semana7_2')">
+        <h3>Semana 7_2</h3>
+        <div id="semana7_2" class="submenu" style="display: none;">
+           <h3>clase estudiante:</h3>
+                    <a href="https://github.com/Madeleyleiva/DPW/blob/6041fac3bd05109654ed2a9094fb135097e2eb60/dart/proyecto01.dart">Ver proyecto01</a><br>
+                    <a href="https://github.com/Madeleyleiva/DPW/blob/6041fac3bd05109654ed2a9094fb135097e2eb60/dart/proyecto02.dart">Ver proyecto02</a><br>
+                    <a href="https://github.com/Madeleyleiva/DPW/blob/6041fac3bd05109654ed2a9094fb135097e2eb60/dart/proyecto03.dart">Ver proyecto03</a>
+        </div>
+    </div>
+
+    <div class="semana" onclick="mostrarSubmenu('semana8')">
+        <h3>Semana 8</h3>
+        <div id="semana8" class="submenu" style="display: none;">
+           <h3>clase estudiante:</h3>
+                    
+        </div>
+    </div>
+    <div class="semana" onclick="mostrarSubmenu('semana9')">
+        <h3>Semana 9</h3>
+        <div id="semana9" class="submenu" style="display: none;">
+           <h3>main.dart:</h3>
+                    <a href="https://www.figma.com/design/XJI3Sj9Yg1ol4k6xSS7p1a/Untitled?node-id=0-1&t=SKean3KOngA5FG6E-1</a><br>
+        </div>
+</div>
+
+        </section>
+    </main>
+
+   
+
+    <script>
+        function mostrarContenido(seccion) {
+            const secciones = document.querySelectorAll('main > section');
+            secciones.forEach(sec => {
+                sec.style.display = 'none'; // Oculta todas las secciones
+            });
+
+            const seccionSeleccionada = document.getElementById(seccion);
+            seccionSeleccionada.style.display = 'block'; // Muestra la sección seleccionada
+
+            // Oculta todos los submenús
+            const submenus = document.querySelectorAll('.submenu');
+            submenus.forEach(sub => {
+                sub.style.display = 'none';
+            });
+
+            // Muestra la imagen si es la sección de inicio
+            if (seccion === 'inicio') {
+                document.getElementById('imagenInicio').style.display = 'block'; // Muestra la imagen
+            } else {
+                document.getElementById('imagenInicio').style.display = 'none'; // Oculta la imagen
+            }
+        }
+
+        function mostrarSubmenu(semanaId) {
+            const submenuSeleccionado = document.getElementById(semanaId);
+            submenuSeleccionado.style.display = (submenuSeleccionado.style.display === 'block') ? 'none' : 'block'; // Alterna la visibilidad
+        }
+    </script>
+</body>
+</html>
+
+   
+
+    <script>
+        function mostrarContenido(seccion) {
+            const secciones = document.querySelectorAll('main > section');
+            secciones.forEach(sec => {
+                sec.style.display = 'none'; // Oculta todas las secciones
+            });
+
+            const seccionSeleccionada = document.getElementById(seccion);
+            seccionSeleccionada.style.display = 'block'; // Muestra la sección seleccionada
+
+            // Oculta todos los submenús
+            const submenus = document.querySelectorAll('.submenu');
+            submenus.forEach(sub => {
+                sub.style.display = 'none';
+            });
+
+            // Muestra la imagen si es la sección de inicio
+            if (seccion === 'inicio') {
+                document.getElementById('imagenInicio').style.display = 'block'; // Muestra la imagen
+            } else {
+                document.getElementById('imagenInicio').style.display = 'none'; // Oculta la imagen
+            }
+        }
+
+        function mostrarSubmenu(semanaId) {
+            const submenuSeleccionado = document.getElementById(semanaId);
+            submenuSeleccionado.style.display = (submenuSeleccionado.style.display === 'block') ? 'none' : 'block'; // Alterna la visibilidad
+        }
+    </script>
+</body>
+</html>
